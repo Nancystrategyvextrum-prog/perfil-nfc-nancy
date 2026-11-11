@@ -12,3 +12,20 @@
 .social-link:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(16,43,64,.08)}
 .social-link:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
 @media(max-width:480px){.social{padding-inline:25px}}
+
+/* Proyectos destacados: desplegables accesibles, coherentes con la identidad existente */
+.projects{padding:34px 36px 42px;background:#fff;border-top:1px solid var(--line)}
+.projects h2{font-size:23px;letter-spacing:-.03em;margin:0 0 12px}
+.projects-intro{font-size:14px;line-height:1.75;color:var(--slate);margin:0 0 21px}
+.project-group{border:1px solid var(--line);border-radius:13px;margin:11px 0;overflow:hidden;background:#f8fbfc}
+.project-group summary{display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer;list-style:none;padding:17px 17px;font-size:14px;font-weight:800;color:var(--navy)}
+.project-group summary::-webkit-details-marker{display:none}
+.project-group summary small{display:block;margin-top:5px;font-size:11px;font-weight:500;color:var(--slate)}
+.project-group .chevron{color:var(--cyan);font-size:24px;line-height:1;transition:transform .15s}
+.project-group[open] .chevron{transform:rotate(180deg)}
+.project-group summary:focus-visible{outline:3px solid var(--cyan);outline-offset:-3px}
+.project-content{padding:0 17px 17px;border-top:1px solid var(--line)}
+.project-content h3{font-size:14px;margin:17px 0 7px;color:var(--navy)}
+.project-content p{font-size:13px;line-height:1.75;color:var(--slate);margin:0 0 13px}
+.project-content p:last-child{margin-bottom:0}
+@media(max-width:480px){.projects{padding-inline:27px}}
